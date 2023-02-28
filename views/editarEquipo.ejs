@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Modificar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='/stylesheets/formEditarEquipo.css'/>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body style="overflow-y: hidden;">
+        <!-- barra de navegacion -->
+        <div class="topnav">
+          <a href="/logout">Salir</a>
+          <a  href="/reportes">Reportes</a>
+          <a href="/consultas">Consulta</a>
+          <a class="active" href="/inicio">Inicio</a>
+        </div>
+
+          <!-- contenedor de cajas -->
+          
+          <div  style="position: absolute; left: 250px; top: 80px;">
+          <h3>Modificar Equipo</h3>
+          <img src="/images/logo_forms.png"style="position: absolute; right:230px; bottom:5px;" width="45" height="45">
+          </div>
+
+          <form action="/editarEqBusqueda" method="POST" style="position: absolute; left:710px; top: 80px;" class="form-inline">
+            <div class="form-group mb-2">
+                <label for="inputPassword2" class="sr-only">Serial</label>
+                <input type="text" class="form-control" name="serial"  placeholder="Serial">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputPassword2" class="sr-only">Placa</label>
+              <input type="text" class="form-control" name="placa"  placeholder="Placa">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+          </form>
+         
+
+        
+          <div class="contenedor-cajas">
+            
+            <div><p id="texto1">Tipo</p><input class="input1" type="text"  name="tipo" ></div>
+            <div><p id="texto2">Marca</p><input class="input2" type="text"  name="marca" ></div>
+            <div><p id="texto3">Modelo</p><input class="input3" type="text"  name="modelo"></div>
+            <div><p id="texto4">Serial</p><input class="input4" type="text"  name="serial" ></div>
+            <div><p id="texto5">Placa</p><input class="input5" type="text"  name="placa" ></div>
+            <div><p id="texto6">Estado</p><input class="input6" type="text"  name="estado" ></div>
+            <div><p id="texto7">Plataforma</p><input class="input7" type="text"  name="plataforma" ></div>
+            <div><p id="texto8">Sistema Operativo</p><input class="input8" type="text"  name="sistema" ></div>
+            <div><p id="texto9">Monitor1</p><input class="input9" type="text"  name="monitor1" ></div>
+            <div><p id="texto10">Monitor2</p><input class="input10" type="text"  name="monitor2" ></div>
+            <div><p id="texto11">Ag.Alista</p><input class="input11" type="text"  name="ag_alista" ></div>
+            <div><p id="texto12">Ag.Retira</p><input class="input12" type="text"  name="ag_retira" ></div>
+            <div><p id="texto13">Mouse</p><input class="input13" type="text"  name="mouse" ></div>
+            <div><p id="texto14">Diadema</p><input class="input14" type="text"  name="diadema" ></div>
+            <div><p id="texto15">Adap.Video</p><input class="input15" type="text"  name="video" ></div>
+            <div><p id="texto16">Base.Ref</p><input class="input16" type="text"  name="refrigerante" ></div>
+            <div><p id="texto17">Base monitor</p><input class="input17" type="text"  name="monitor" ></div>
+            <div><p id="texto18">DD.Externo</p><input class="input18" type="text"  name="disco" ></div>
+            <div><p id="texto19">Wacom</p><input class="input19" type="text"  name="Wacom" ></div>
+            <div><p id="texto20">Tablet</p><input class="input20" type="text"  name="Tablet" ></div>
+            <div><p id="texto21">Adicionales</p><input class="input21" type="text"  name="adicionales" ></div>
+            <div><p id="texto22">Validacion.Doc</p><input class="input22" type="text"  name="documentos" ></div>
+         
+           
+
+          </div>
+
+         
+        </form>
+
+
+    </body>
+</html>

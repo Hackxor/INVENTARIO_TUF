@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Modificar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='/stylesheets/formEditarUsuario.css'/>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body style="overflow-y: hidden;">
+        <!-- barra de navegacion -->
+        <div class="topnav">
+          <a href="/logout">Salir</a>
+          <a  href="/reportes">Reportes</a>
+          <a href="/consultas">Consulta</a>
+          <a class="active" href="/inicio">Inicio</a>
+        </div>
+
+          <!-- contenedor de cajas -->
+          
+          <div  style="position: absolute; left: 250px; top: 80px;">
+          <h3>Modificar Equipo</h3>
+          <img src="/images/logo_forms.png"style="position: absolute; right:230px; bottom:5px;" width="45" height="45">
+          </div>
+
+          <form action="/editarUsBusqueda" method="POST" style="position: absolute; left:710px; top: 80px;" class="form-inline">
+            <div class="form-group mb-2">
+                <label for="inputPassword2" class="sr-only">Usuario</label>
+                <input type="text" class="form-control" name="usuario_red"  placeholder="Usuario">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputPassword2" class="sr-only">Jefe</label>
+              <input type="text" class="form-control" name="jefe"  placeholder="Jefe">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+          </form>
+         
+
+        
+          <div class="contenedor-cajas">
+
+            <div><p id="texto1">Cedula</p><input class="input1" type="text"  name="cedula" required></div>
+            <div><p id="texto2">Nombre</p><input class="input2" type="text"  name="nombre_usuario" required></div>
+            <div><p id="texto3">Apellido</p><input class="input3" type="text"  name="apellidos_usuario" required></div>
+            <div><p id="texto4">Usuario Red</p><input class="input4" type="text"  name="usuario_red" required></div>
+            <div><p id="texto5">Correo</p><input class="input5" type="text"  name="correo_usuario" required></div>
+            <div><p id="texto6">Telefono</p><input class="input6" type="text"  name="telefono" required></div>
+            <div><p id="texto7">Jefe</p><input class="input7" type="text"  name="jefe" required></div>
+            <div><p id="texto8">Ingreso</p><input class="input8" type="text"  name="ingreso" required></div>
+            <div><p id="texto9">Retiro</p><input class="input9" type="text"  name="retiro" required></div>
+            <div><p id="texto10">Puesto</p><input class="input10" type="text"  name="puesto" required></div>
+            <div><p id="texto11">Host</p><input class="input11" type="text"  name="host" required></div>
+            <div><p id="texto12">Licencia</p><input class="input12" type="text"  name="licencia" required></div>
+            <div><p id="texto23">Cargo</p><input class="input23" type="text"  name="cargo" ></div>
+            <div><p id="texto24">Ciudad</p><input class="input24" type="text"  name="ciudad" ></div>
+            <div><p id="texto25">Sociedad</p><input class="input25" type="text"  name="sociedad" ></div>
+            <div><p id="texto26">Ceco</p><input class="input26" type="text"  name="ceco" ></div>
+            <div><p id="texto27">Sede</p><input class="input27" type="text"  name="sede" ></div>
+            <div><p id="texto28">Ubicacion</p><input class="input28" type="text"  name="ubicacion" ></div>
+            <div><p id="texto29">Contrato</p><input class="input29" type="text"  name="contrato" ></div>
+            <div><p id="texto30">Ceco_Nombre</p><input class="input30" type="text"  name="nombre_ceco" ></div>
+            <div><p id="texto31">Carta Asignacion</p><input class="input31" type="text"  name="carta" ></div>
+            <div><p id="texto32">Comodato</p><input class="input32" type="text"  name="comodato" ></div>
+
+          </div>
+
+         
+        </form>
+
+
+    </body>
+</html>

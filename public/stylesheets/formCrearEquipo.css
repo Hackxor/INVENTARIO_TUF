@@ -1,0 +1,491 @@
+/* barra */
+.topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    margin-right: 30px;
+  }
+
+  .topnav a {
+    float: right;
+    color: #414141;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+  .topnav a:hover {
+    color: rgb(0, 139, 194);
+  }
+  
+  
+  .topnav a.active {
+    color: rgb(0, 139, 194);
+  }
+
+  /* cajas */
+  
+  
+  .contenedor-cajas{
+    width: 1300px;
+    height: 500px;
+    margin: auto;
+    margin-top: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .contenedor-cajas div{
+    width: 350px;
+    height: 100px;
+    display: inline-flex;
+    margin-right: 3px;
+    position: relative;
+    left: 135px;
+    top: 50px;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+  }
+
+/* Textos */
+  .contenedor-cajas div p{
+font-size: 22px;
+color: #414141;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #texto1{
+    position: relative;
+    left: 150px;
+    top: 5px;
+  }
+.input1{
+  position: relative;
+  top: 37px;
+  right: 15px;
+}
+  #texto2{
+    position: relative;
+    left: 145px;
+    top: 5px;
+  }
+.input2{
+  position: relative;
+  top: 37px;
+  right: 30px;
+}
+
+
+  #texto3{
+    position: relative;
+    left: 145px;
+    top: 5px;
+  }
+  .input3{
+    position: relative;
+    top: 37px;
+    right: 35px;
+  }
+  
+
+
+  #texto4{
+    position: relative;
+    left: 150px;
+    top: 5px;
+  }
+  .input4{
+    position: relative;
+    top: 37px;
+    right: 30px;
+  }
+  
+
+
+  #texto5{
+    position: relative;
+    left: 150px;
+    top: 5px;
+  }
+  .input5{
+    position: relative;
+    top: 37px;
+    right: 26px;
+  }
+  
+
+
+  #texto6{
+    position: relative;
+    left: 150px;
+    top: 5px;
+  }
+  .input6{
+    position: relative;
+    top: 37px;
+    right: 30px;
+  }
+  
+
+
+  #texto7{
+    position: relative;
+    left: 125px;
+    top: 5px;
+  }
+  .input7{
+    position: relative;
+    top: 37px;
+    right: 55px;
+  }
+  
+
+  #texto8{
+    position: relative;
+    left: 140px;
+    top: 5px;
+  }
+  .input8{
+    position: relative;
+    top: 37px;
+    right: 65px;
+  }
+  
+  #texto9{
+    position: relative;
+    left: 145px;
+    top: 5px;
+  }
+  .input9{
+    position: relative;
+    top: 37px;
+    right: 36px;
+  }
+  
+
+  #texto10{
+    position: relative;
+    left: 135px;
+    top: 5px;
+  }
+  .input10{
+    position: relative;
+    top: 37px;
+    right: 45px;
+  }
+  
+
+  #texto11{
+    position: relative;
+    left: 130px;
+    top: 5px;
+  }
+  .input11{
+    position: relative;
+    top: 37px;
+    right: 45px;
+  }
+  
+
+  #texto12{
+    position: relative;
+    left: 140px;
+    top: 5px;
+  }
+  .input12{
+    position: relative;
+    top: 37px;
+    right: 37px;
+  }
+  #texto13{
+    position: relative;
+    left: 145px;
+    top: 5px;
+  }
+  .input13{
+    position: relative;
+    top: 37px;
+    right: 30px;
+  }
+    #texto14{
+      position: relative;
+      left: 135px;
+      top: 5px;
+    }
+  .input14{
+    position: relative;
+    top: 37px;
+    right: 40px;
+  }
+  
+  
+    #texto15{
+      position: relative;
+      left: 130px;
+      top: 5px;
+    }
+    .input15{
+      position: relative;
+      top: 37px;
+      right: 50px;
+    }
+    
+  
+  
+    #texto16{
+      position: relative;
+      left: 140px;
+      top: 5px;
+    }
+    .input16{
+      position: relative;
+      top: 37px;
+      right: 40px;
+    }
+    
+  
+  
+    #texto17{
+      position: relative;
+      left: 150px;
+      top: 5px;
+    }
+    .input17{
+      position: relative;
+      top: 37px;
+      right: 50px;
+    }
+    
+  
+  
+    #texto18{
+      position: relative;
+      left: 135px;
+      top: 5px;
+    }
+    .input18{
+      position: relative;
+      top: 37px;
+      right:50px;
+    }
+    
+  
+  
+    #texto19{
+      position: relative;
+      left: 135px;
+      top: 5px;
+    }
+    .input19{
+      position: relative;
+      top: 37px;
+      right: 40px;
+    }
+    
+  
+    #texto20{
+      position: relative;
+      left: 140px;
+      top: 5px;
+    }
+    .input20{
+      position: relative;
+      top: 37px;
+      right: 27px;
+    }
+    
+    #texto21{
+      position: relative;
+      left: 130px;
+      top: 5px;
+    }
+    .input21{
+      position: relative;
+      top: 37px;
+      right: 50px;
+    }
+    
+  
+    #texto22{
+      position: relative;
+      left: 100px;
+      top: 5px;
+    }
+    .input22{
+      position: relative;
+      top: 37px;
+      right: 80px;
+    }
+    
+  
+    #texto23{
+      position: relative;
+      left: 135px;
+      top: 5px;
+    }
+    .input23{
+      position: relative;
+      top: 37px;
+      right: 30px;
+    }
+    
+  
+    #texto24{
+      position: relative;
+      left: 140px;
+      top: 5px;
+    }
+    .input24{
+      position: relative;
+      top: 37px;
+      right: 30px;
+    }
+
+    #texto25{
+      position: relative;
+      left: 130px;
+      top: 5px;
+    }
+    .input25{
+      position: relative;
+      top: 37px;
+      right: 50px;
+    }
+      #texto26{
+        position: relative;
+        left: 145px;
+        top: 5px;
+      }
+    .input26{
+      position: relative;
+      top: 37px;
+      right: 30px;
+    }
+    
+    
+      #texto27{
+        position: relative;
+        left: 145px;
+        top: 5px;
+      }
+      .input27{
+        position: relative;
+        top: 37px;
+        right: 20px;
+      }
+      
+    
+    
+      #texto28{
+        position: relative;
+        left: 130px;
+        top: 5px;
+      }
+      .input28{
+        position: relative;
+        top: 37px;
+        right: 50px;
+      }
+      
+    
+    
+      #texto29{
+        position: relative;
+        left: 130px;
+        top: 5px;
+      }
+      .input29{
+        position: relative;
+        top: 37px;
+        right: 50px;
+      }
+      
+    
+    
+      #texto30{
+        position: relative;
+        left: 110px;
+        top: 5px;
+      }
+      .input30{
+        position: relative;
+        top: 37px;
+        right: 70px;
+      }
+      
+    
+    
+      #texto31{
+        position: relative;
+        left: 140px;
+        top: 5px;
+      }
+      .input31{
+        position: relative;
+        top: 37px;
+        right: 65px;
+      }
+      
+    
+      #texto32{
+        position: relative;
+        left: 130px;
+        top: 5px;
+      }
+      .input32{
+        position: relative;
+        top: 37px;
+        right: 20px;
+      }
+      
+   
+
+
+
+
+  .iconos{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+  }
+
+
+  /* cajas de texto */
+  .contenedor-cajas div input[type=text] {
+    background-color: rgb(227, 245, 253);
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    height: 50px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    outline: none;
+   
+  }
+
+  /* Boton */
+  #btn{
+    border: none;
+    background-color: rgb(20, 123, 241);
+    color: white;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    left: 640px;
+    bottom: 20px;
+    cursor: pointer;
+
+  }
+
+  #btn:hover{
+    background-color: rgb(20, 97, 185);
+  }

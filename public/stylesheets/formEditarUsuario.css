@@ -1,0 +1,253 @@
+/* barra */
+.topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    margin-right: 30px;
+  }
+
+  .topnav a {
+    float: right;
+    color: #414141;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+  .topnav a:hover {
+    color: rgb(0, 139, 194);
+  }
+  
+  
+  .topnav a.active {
+    color: rgb(0, 139, 194);
+  }
+
+  /* cajas */
+  
+  
+  .contenedor-cajas{
+    width: 1300px;
+    height: 500px;
+    margin: auto;
+    margin-top: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .contenedor-cajas div{
+    width: 350px;
+    height: 100px;
+    display: inline-flex;
+    margin-right: 3px;
+    position: relative;
+    left: 135px;
+    top: 70px;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+  }
+
+/* Textos */
+  .contenedor-cajas div p{
+font-size: 22px;
+color: #414141;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #texto1{
+    position: relative;
+    left: 150px;
+    top: 5px;
+  }
+.input1{
+  position: relative;
+  top: 37px;
+  right: 15px;
+}
+  #texto2{
+    position: relative;
+    left: 145px;
+    top: 5px;
+  }
+.input2{
+  position: relative;
+  top: 37px;
+  right: 30px;
+}
+
+
+  #texto3{
+    position: relative;
+    left: 145px;
+    top: 5px;
+  }
+  .input3{
+    position: relative;
+    top: 37px;
+    right: 35px;
+  }
+  
+
+
+  #texto4{
+    position: relative;
+    left: 150px;
+    top: 5px;
+  }
+  .input4{
+    position: relative;
+    top: 37px;
+    right: 40px;
+  }
+  
+
+
+  #texto5{
+    position: relative;
+    left: 150px;
+    top: 5px;
+  }
+  .input5{
+    position: relative;
+    top: 37px;
+    right: 26px;
+  }
+  
+
+
+  #texto6{
+    position: relative;
+    left: 150px;
+    top: 5px;
+  }
+  .input6{
+    position: relative;
+    top: 37px;
+    right: 30px;
+  }
+  
+
+
+  #texto7{
+    position: relative;
+    left: 160px;
+    top: 5px;
+  }
+  .input7{
+    position: relative;
+    top: 37px;
+    right: 10px;
+  }
+  
+
+  #texto8{
+    position: relative;
+    left: 140px;
+    top: 5px;
+  }
+  .input8{
+    position: relative;
+    top: 37px;
+    right: 30px;
+  }
+  
+  #texto9{
+    position: relative;
+    left: 145px;
+    top: 5px;
+  }
+  .input9{
+    position: relative;
+    top: 37px;
+    right: 36px;
+  }
+  
+
+  #texto10{
+    position: relative;
+    left: 135px;
+    top: 5px;
+  }
+  .input10{
+    position: relative;
+    top: 37px;
+    right: 45px;
+  }
+  
+
+  #texto11{
+    position: relative;
+    left: 150px;
+    top: 5px;
+  }
+  .input11{
+    position: relative;
+    top: 37px;
+    right: 15px;
+  }
+  
+
+  #texto12{
+    position: relative;
+    left: 140px;
+    top: 5px;
+  }
+  .input12{
+    position: relative;
+    top: 37px;
+    right: 37px;
+  }
+  
+
+
+
+
+
+
+
+  .iconos{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+  }
+
+
+  /* cajas de texto */
+  .contenedor-cajas div input[type=text] {
+    background-color: rgb(227, 245, 253);
+    border: none;
+    color: #0d0d0d;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    height: 50px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    outline: none;
+   
+  }
+
+  /* Boton */
+  #btn{
+    border: none;
+    background-color: rgb(20, 123, 241);
+    color: white;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    left: 640px;
+    bottom: 5px;
+    cursor: pointer;
+
+  }
+
+  #btn:hover{
+    background-color: rgb(20, 97, 185);
+  }

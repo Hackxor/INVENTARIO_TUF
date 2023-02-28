@@ -1,0 +1,109 @@
+/* barra */
+.topnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    margin-right: 30px;
+  }
+
+  .topnav a {
+    float: right;
+    color: #414141;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+  .topnav a:hover {
+    color: rgb(0, 139, 194);
+  }
+  
+  
+  .topnav a.active {
+    color: rgb(0, 139, 194);
+  }
+
+  /* cajas */
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+
+  
+  .fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .contenedor-cajas{
+    width: 1300px;
+    height: 450px;
+    margin: auto;
+    margin-top: 70px;
+  
+  }
+
+  .contenedor-cajas div{
+    width: 380px;
+    height: 200px;
+    display: inline-flex;
+    margin-right: 3px;
+    position: relative;
+    left: 135px;
+    top: 50px;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+  }
+
+
+  .contenedor-cajas div p{
+position: relative;
+top: 110px;
+font-size: 22px;
+right: 30px;
+color: #414141;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+  .iconos{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 30px;
+    left: 40px;
+  }

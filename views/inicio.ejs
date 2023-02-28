@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Inicio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='/stylesheets/inicio.css'/>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body style="overflow-y: hidden;">
+      <!-- <% if(login){ %> -->
+
+        
+        <!-- barra de navegacion -->
+        <div class="topnav">
+            <a href="/logout">Salir</a>
+            <a href="/reportes">Reportes</a>
+            <a href="/consultas">Consulta</a>
+            <a class="active" href="/inicio">Inicio</a>
+          </div>
+
+          <!-- contenedor de cajas -->
+          <div class="fadeIn first" style="position: absolute; left: 170px;">
+            <h2 class="titulo1">Inventario TUF</h2>
+            <p class="titulo2" style="font-size: 19px;color: #414141;">Seleccione una opcion</p>
+          </div>
+          
+          <div class="contenedor-cajas  fadeInDown">
+            
+            <a style="text-decoration: none;" href="/crearEquipo"><div><img class="iconos" src="/images/icono_pc.png"><p>Creacion Equipo</p></div></a>
+            <a style="text-decoration: none;" href="/editarEquipo"><div><img class="iconos" src="/images/icono_pc.png"><p>Modificacion Equipo</p></div></a>
+            <a style="text-decoration: none;" href="/consultarEquipo"><div><img class="iconos" src="/images/icono_pc.png"><p>Consulta Equipo</p></div></a>
+            <a style="text-decoration: none;" href="/crearUsuario"><div><img class="iconos" src="/images/icono_user.png"><p>Creacion Usuario</p></div></a>
+            <a style="text-decoration: none;" href="/editarUsuario"><div><img class="iconos" src="/images/icono_user.png"><p>Modificacion Usuario</p></div></a>
+            <a style="text-decoration: none;" href="/consultarUsuario"><div><img class="iconos" src="/images/icono_user.png"><p>Consulta Usuario</p></div></a>
+
+
+          </div>
+          <!-- <% } else{ %>
+
+
+          <% } %> -->
+
+    </body>
+</html>

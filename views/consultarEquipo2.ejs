@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Consultar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='/stylesheets/formConsultarEquipo.css'/>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body style="overflow-y: hidden;">
+        <!-- barra de navegacion -->
+        <div class="topnav">
+          <a href="/logout">Salir</a>
+          <a  href="/consultas">Consulta</a>
+          <a  href="/reportes">Reportes</a>
+          <a class="active" href="/inicio">Inicio</a>
+        </div>
+
+          <!-- contenedor de cajas -->
+          
+          <div  style="position: absolute; left: 250px; top: 80px;">
+          <h3>Consultar Equipo</h3>
+          <img src="/images/logo_forms.png"style="position: absolute; right:230px; bottom:5px;" width="45" height="45">
+          </div>
+
+          <form action="/consultarEq" method="POST" style="position: absolute; left:710px; top: 80px;" class="form-inline">
+            <div class="form-group mb-2">
+                <label for="inputPassword2" class="sr-only">Serial</label>
+                <input type="text" name="serial" class="form-control"  placeholder="Serial">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputPassword2" class="sr-only">Placa</label>
+              <input type="text" name="placa" class="form-control"  placeholder="Placa">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+          </form>
+         
+
+          <div class="contenedor-cajas">
+            <% equipos.forEach(equipo =>{ %>
+            <div><p id="texto1">Tipo</p><input class="input1" type="text" value="<%= equipo.tipo %>" name="tipo" disabled></div>
+            <div><p id="texto2">Marca</p><input class="input2" type="text" value="<%= equipo.marca %>" name="marca" disabled></div>
+            <div><p id="texto3">Modelo</p><input class="input3" type="text" value="<%= equipo.modelo %>" name="modelo"disabled></div>
+            <div><p id="texto4">Serial</p><input class="input4" type="text" value="<%= equipo.serial %>" name="serial" disabled></div>
+            <div><p id="texto5">Placa</p><input class="input5" type="text" value="<%= equipo.id_placa %>" name="placa" disabled></div>
+            <div><p id="texto6">Estado</p><input class="input6" type="text" value="<%= equipo.estado %>" name="estado" disabled></div>
+            <div><p id="texto7">Plataforma</p><input class="input7" type="text" value="<%= equipo.plataforma %>" name="plataforma" disabled></div>
+            <div><p id="texto8">Sistema Operativo</p><input class="input8" type="text" value="<%= equipo.sistema %>" name="sistema" disabled></div>
+            <div><p id="texto9">Monitor1</p><input class="input9" type="text" value="<%= equipo.monitor1 %>" name="monitor1" disabled></div>
+            <div><p id="texto10">Monitor2</p><input class="input10" type="text" value="<%= equipo.monitor2 %>" name="monitor2" disabled></div>
+            <div><p id="texto11">Ag.Alista</p><input class="input11" type="text" value="<%= equipo.ag_alista %>" name="ag_alista" disabled></div>
+            <div><p id="texto12">Ag.Retira</p><input class="input12" type="text" value="<%= equipo.ag_retira %>" name="ag_retira"disabled ></div>
+            <div><p id="texto13">Mouse</p><input class="input13" type="text" value="<%= equipo.mouse %>" name="mouse" disabled ></div>
+            <div><p id="texto14">Diadema</p><input class="input14" type="text" value="<%= equipo.diadema %>" name="diadema" disabled></div>
+            <div><p id="texto15">Adap.Video</p><input class="input15" type="text" value="<%= equipo.video %>" name="video" disabled></div>
+            <div><p id="texto16">Base.Ref</p><input class="input16" type="text" value="<%= equipo.refrigerante %>" name="refrigerante" disabled></div>
+            <div><p id="texto17">Base monitor</p><input class="input17" type="text" value="<%= equipo.monitor %>" name="monitor"disabled ></div>
+            <div><p id="texto18">DD.Externo</p><input class="input18" type="text" value="<%= equipo.disco %>" name="disco" disabled></div>
+            <div><p id="texto19">Wacom</p><input class="input19" type="text" value="<%= equipo.wacom %>" name="Wacom" disabled></div>
+            <div><p id="texto20">Tablet</p><input class="input20" type="text" value="<%= equipo.tablet %>" name="Tablet" disabled></div>
+            <div><p id="texto21">Adicionales</p><input class="input21" type="text" value="<%= equipo.adicionales %>" name="adicionales" disabled></div>
+            <div><p id="texto22">Validacion.Doc</p><input class="input22" type="text" value="<%= equipo.documentos %>" name="documentos" disabled></div>
+  
+            
+            <% }) %>
+            <% usuarios.forEach(usuario =>{ %>
+              <div><p id="texto32">Usuario</p><input class="input32" type="text" value="<%= usuario.usuario_red %>" name="comodato" disabled></div>
+              <% }) %>
+          </div>
+
+
+    </body>
+</html>

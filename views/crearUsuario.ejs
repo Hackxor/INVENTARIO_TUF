@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crear</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='/stylesheets/formCrearUsuario.css'/>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body style="overflow-y:hidden;">
+        <!-- barra de navegacion -->
+        <div class="topnav">
+          <a href="/logout">Salir</a>
+          <a  href="/reportes">Reportes</a>
+          <a href="/consultas">Consulta</a>
+          <a class="active" href="/inicio">Inicio</a>
+        </div>
+
+          <!-- contenedor de cajas -->
+          <form action="/crearUs" method="POST">
+          <div  style="position: absolute; left: 250px;">
+          <h3>Crear Usuario</h3>
+          <img src="/images/logo_forms.png"style="position: absolute; right:180px; bottom:5px;" width="45" height="45">
+          </div>
+          
+          <div id="contenedor-lista">
+            <label for="cars">Equipo a asociar:</label>
+            <select id="cars" name="equipo_placa">
+              <% equipos.forEach(equipo =>{ %>
+              <option value="<%= equipo.id_placa %>"><%= equipo.id_placa %></option>
+              <% }) %>
+            </select>
+  
+          </div>
+      
+          <div class="contenedor-cajas">
+            
+            <div><p id="texto1">Cedula</p><input class="input1" type="text"  name="id" required></div>
+            <div><p id="texto2">Nombre</p><input class="input2" type="text"  name="nombre_usuario" required></div>
+            <div><p id="texto3">Apellido</p><input class="input3" type="text"  name="apellidos_usuario" required></div>
+            <div><p id="texto4">Usuario Red</p><input class="input4" type="text"  name="usuario_red" required></div>
+            <div><p id="texto5">Correo</p><input class="input5" type="text"  name="correo_usuario" required></div>
+            <div><p id="texto6">Telefono</p><input class="input6" type="text"  name="telefono" required></div>
+            <div><p id="texto7">Jefe</p><input class="input7" type="text"  name="jefe" required></div>
+            <div><p id="texto8">Ingreso</p><input class="input8" type="text"  name="ingreso" required></div>
+            <div><p id="texto9">Retiro</p><input class="input9" type="text"  name="retiro" required></div>
+            <div><p id="texto10">Puesto</p><input class="input10" type="text"  name="puesto" required></div>
+            <div><p id="texto11">Host</p><input class="input11" type="text"  name="host" required></div>
+            <div><p id="texto12">Licencia</p>
+              <select style="width: 100px; height:30px; position:absolute; left:120px; top:50px" name="licencia">
+                <% licencias.forEach(licencia =>{ %>
+                <option value="<%= licencia.licencia %>"><%= licencia.licencia %></option>
+                <% }) %>
+              </select>
+            </div>
+
+            <div><p id="texto23">Cargo</p>
+              <select style="width: 100px; height:30px; position:absolute; left:120px; top:50px" name="cargo">
+                <% Cargo.forEach(cargos =>{ %>
+                <option value="<%= cargos.cargo %>"><%= cargos.cargo %></option>
+                <% }) %>
+              </select></div>
+            <div><p id="texto24">Ciudad</p>
+              <select style="width: 100px; height:30px; position:absolute; left:120px; top:50px" name="ciudad">
+                <% ciudades.forEach(ciudad =>{ %>
+                <option value="<%= ciudad.ciudad %>"><%= ciudad.ciudad %></option>
+                <% }) %>
+              </select>
+            </div>
+            <div><p id="texto25">Sociedad</p>
+              <select style="width: 100px; height:30px; position:absolute; left:120px; top:50px" name="sociedad">
+                <% sociedades.forEach(sociedad =>{ %>
+                <option value="<%= sociedad.sociedad %>"><%= sociedad.sociedad %></option>
+                <% }) %>
+              </select>
+            </div>
+            <div><p id="texto26">Ceco</p>
+              <select style="width: 100px; height:30px; position:absolute; left:120px; top:50px" name="ceco">
+                <% cecos.forEach(ceco =>{ %>
+                <option value="<%= ceco.ceco %>"><%= ceco.ceco %></option>
+                <% }) %>
+              </select></div>
+            <div><p id="texto27">Sede</p>
+              <select style="width: 100px; height:30px; position:absolute; left:120px; top:50px" name="sede">
+                <% sedes.forEach(sede =>{ %>
+                <option value="<%= sede.sede %>"><%= sede.sede %></option>
+                <% }) %>
+              </select>
+            </div>
+            <div><p id="texto28">Ubicacion</p><input class="input28" type="text"  name="ubicacion" ></div>
+            <div><p id="texto29">Contrato</p>
+              <select style="width: 100px; height:30px; position:absolute; left:120px; top:50px" name="contrato">
+                <% contratos.forEach(contrato =>{ %>
+                <option value="<%= contrato.contrato %>"><%= contrato.contrato %></option>
+                <% }) %>
+              </select>
+            </div>
+            <div><p id="texto30">Ceco_Nombre</p>
+              <select style="width: 100px; height:30px; position:absolute; left:120px; top:50px" name="nombre_ceco">
+                <% contratosceco.forEach(contratos =>{ %>
+                <option value="<%= contratos.contrato %>"><%= contratos.contrato %></option>
+                <% }) %>
+              </select>
+            </div>
+            <div><p id="texto31">Carta Asignacion</p><input class="input31" type="text"  name="asignacion" ></div>
+            <div><p id="texto32">Comodato</p><input class="input32" type="text"  name="comodato" ></div>
+        
+            
+           
+
+          </div>
+
+          <button id="btn" type="submit">Agregar Registro</button>
+        </form>
+
+
+    </body>
+</html>

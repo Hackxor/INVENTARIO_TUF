@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel='stylesheet' href='/stylesheets/login.css' />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+    
+        <!-- Icon -->
+        <div class="fadeIn first" style="position:relative; top: 10px;">
+          <h4>Inventario tuf</h4>
+        </div>
+    
+        <!-- Login Form -->
+        <form action="/loginOn" method="POST">
+          <input type="email"  id="login" class="fadeIn second" name="correo" placeholder="Ingresa el correo">
+          <input type="password" id="password" class="fadeIn third" name="contraseña" placeholder="Ingresa la contraseña">
+          <input type="submit" class="fadeIn fourth" value="Ingreso">
+        </form>
+    
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

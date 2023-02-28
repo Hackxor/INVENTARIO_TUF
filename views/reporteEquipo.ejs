@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reportes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='/stylesheets/reportes.css'/>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script src="https://unpkg.com/xlsx@0.16.9/dist/xlsx.full.min.js"></script>
+        <script src="https://unpkg.com/file-saverjs@latest/FileSaver.min.js"></script>
+        <script src="https://unpkg.com/tableexport@latest/dist/js/tableexport.min.js"></script>
+    </head>
+    <body style="overflow-y: hidden;">
+        <!-- barra de navegacion -->
+        <div class="topnav">
+          <a href="/logout">Salir</a>
+          <a  class="active" href="/reportes">Reportes</a>
+          <a  href="/consultas">Consulta</a>
+          <a href="/inicio">Inicio</a>
+        </div>
+
+          <!-- contenedor de cajas -->
+          
+          <div  style="position: absolute; left: 250px; top: 80px;">
+          <h3>Reporte de Equipos</h3>
+          <img src="/images/logo_forms.png"style="position: absolute; right:260px; bottom:5px;" width="45" height="45">
+          </div>
+
+          <button id="btnExportar2"><img src="/images/download_icon.png"></button>
+
+          <form action="/filtrarEq" method="POST" style="position: absolute; left:600px; top: 80px;" class="form-inline">
+            <div class="form-group mx-sm-1 mb-2 ">
+                <label for="inputPassword2" class="sr-only">Plataforma</label>
+                <input style="width: 150px;" type="text" name="plataforma" class="form-control"  placeholder="Plataforma">
+            </div>
+            <div class="form-group mx-sm-2 mb-2 ">
+              <label for="inputPassword2" class="sr-only">Placa</label>
+              <input style="width: 100px;" type="text" name="placa" class="form-control"  placeholder="Placa">
+          </div>
+            <div class="form-group mb-2">
+                <label for="inputPassword2" class="sr-only">Serial</label>
+                <input style="width: 150px;" type="text" name="serial" class="form-control"  placeholder="Serial">
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputPassword2" class="sr-only">modelo</label>
+              <input style="width: 150px;" type="text" name="modelo" class="form-control"  placeholder="Modelo">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+          </form>
+         
+
+          <div class="contenedor-cajas">
+            
+            <table id="tabla" class="customTable">
+                <thead>
+                  <tr>
+                    <th>Placa</th>
+                    <th>Tipo</th>
+                    <th>Serial</th>
+                    <th>Modelo</th>
+                    <th>Estado</th>
+                    <th>Plataforma</th>
+                    <th>Sistema</th>
+                    <th>Monitor1</th>
+                    <th>Monitor2</th>
+                    <th>Ag_alista</th>
+                    <th>Ag_retira</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% equipos.forEach(equipo =>{ %>
+                    <tr>
+                      <td><%= equipo.id_placa %></td>
+                      <td><%= equipo.tipo %></td>
+                      <td><%= equipo.serial %></td>
+                      <td><%= equipo.modelo %></td>
+                      <td><%= equipo.estado %></td>
+                      <td><%= equipo.plataforma %></td>
+                      <td><%= equipo.sistema %></td>
+                      <td><%= equipo.monitor1 %></td>
+                      <td><%= equipo.monitor2 %></td>
+                      <td><%= equipo.ag_alista %></td>
+                      <td><%= equipo.ag_retira %></td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+              </table>
+           
+
+          </div>
+
+
+    </body>
+    <script>
+      const $btnExportar = document.querySelector("#btnExportar2"),
+          $tabla = document.querySelector("#tabla");
+    
+      $btnExportar.addEventListener("click", function() {
+          let tableExport = new TableExport($tabla, {
+              exportButtons: false, // No queremos botones
+              filename: "Reporte_Equipos", //Nombre del archivo de Excel
+              sheetname: "Reporte_Equipos", //Título de la hoja
+          });
+          let datos = tableExport.getExportData();
+          let preferenciasDocumento = datos.tabla.xlsx;
+          tableExport.export2file(preferenciasDocumento.data, preferenciasDocumento.mimeType, preferenciasDocumento.filename, preferenciasDocumento.fileExtension, preferenciasDocumento.merges, preferenciasDocumento.RTL, preferenciasDocumento.sheetname);
+      });
+    </script>
+</html>

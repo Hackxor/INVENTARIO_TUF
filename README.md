@@ -30,7 +30,16 @@ Code Blocks (Preformatted text):
     
     4.Despues de esto solo quedaria importar el script de la base de datos que he incluido en el proyecto y con eso deberia funcionar correctamente.
     
-[Aqui]() el codigo a descargar.
+[Aqui](https://github.com/Hackxor/INVENTARIO_TUF/tree/master) el codigo a descargar.
+
+![](https://i.postimg.cc/1z9sn2YF/1.png)
+
+![](https://i.postimg.cc/8P61qh67/2.png)
+
+![](https://i.postimg.cc/d0LZX5Gz/3.png)
+
+![](https://i.postimg.cc/zBpmgFcG/screencapture-localhost-5000-reporte-Usuario-2023-02-27-23-46-33.png)
+
     
     
     
